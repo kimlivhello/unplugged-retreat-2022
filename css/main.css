@@ -87,6 +87,10 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+   .content-wrapper {
+     width: 90%;
+   }
+
   /* ------------------- Base Header - Footer Styles ---------------*/
 
   header
@@ -99,15 +103,23 @@ textarea {
 
   /* Header Styles */
 
+  header {
+    padding: 15px 0;
+  }
+
   header .content-wrapper {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    align-items: center;
+    padding: 0;
+  }
+
+  header .logo {
+    width: 60%;
   }
 
   .header-divider {
-
+    width: 100%;
   }
 
   header nav {
@@ -115,11 +127,15 @@ textarea {
     justify-content: space-around;
     align-items: center;
     flex-flow: row wrap;
+    width: 60%;
   }
 
   header nav ul {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+    padding: 15px 0;
   }
 
   /* Footer Styles */
@@ -129,17 +145,33 @@ textarea {
   }
 
   footer .content-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
 
+  footer h3 {
+    padding-top: 45px;
+    margin: 0;
+  }
+
+  footer p {
+    margin: 0 0 10px 0;
   }
 
   footer .contact {
+    text-align: center;
+  }
 
+  footer .contact p {
+    margin-top: 20px;
   }
 
   footer .social-media {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    margin-bottom: 50px;
   }
 
   footer .social-media p {
@@ -148,12 +180,19 @@ textarea {
     align-items: center;
   }
 
+  footer .copyright {
+    text-align: center;
+  }
 /* ------------------- Mobile Styles - Homepage ---------------*/
 
   .hero-area {
     display: flex;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
+  }
+
+  .hero-area h2 {
+    width: 90%;
   }
 
   aside {
@@ -167,6 +206,10 @@ textarea {
 
   }
 
+  aside h3 {
+    margin-top: 30px;
+  }
+
   .features {
     display: flex;
     justify-content: center;
@@ -174,7 +217,7 @@ textarea {
   }
 
   .features .content-wrapper {
-
+    
   }
 
   .features-items {
@@ -182,6 +225,21 @@ textarea {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+  }
+
+  .features h2 {
+    margin-top: 50px;
+  }
+
+  .features article {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    width: 60%;
+  }
+
+  .features p {
+    text-align: center;
   }
 
   .reviews {
@@ -192,6 +250,14 @@ textarea {
 
   .reviews .content-wrapper {
 
+  }
+
+  .reviews h2 {
+    margin-top: 50px;
+  }
+
+  .reviews h3 {
+    margin: 20px 0;
   }
 
 /* ------------------- Mobile Styles - About Page ---------------*/
