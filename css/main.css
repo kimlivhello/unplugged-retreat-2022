@@ -264,24 +264,32 @@ textarea {
 
 .mission {
   display: flex;
-  justify-content: left;
+  justify-content: center;
   align-items: center;
   flex-flow: row wrap;
 }
 
 .mission .contact-wrapper {
-
+  width: 90%;
 }
 
 .contact-section {
   display: flex;
-  justify-content: left;
+  justify-content: center;
   align-items: center;
   flex-flow: row wrap;
 }
 
 .contact-section .content-wrapper {
+  width: 90%;
+}
 
+.contact-section h3, .contact-section p {
+  text-align: center;
+}
+
+.contact-section h3 {
+  margin: 10px 0;
 }
 
 
@@ -289,9 +297,10 @@ textarea {
 
 .faq {
   display: flex;
-  justify-content: left;
+  justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  width: 90%;
 }
 
 .faq .content-wrapper {
@@ -299,6 +308,10 @@ textarea {
   justify-content: left;
   align-items: center;
   flex-flow: row wrap;
+}
+
+.faq h2, .faq h3 {
+  margin: 50px 0 10px;
 }
 
 /* ==========================================================================
