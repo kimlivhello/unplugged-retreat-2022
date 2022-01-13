@@ -99,6 +99,7 @@ textarea {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    width: 90%;
   }
 
   /* Header Styles */
@@ -269,7 +270,7 @@ textarea {
   flex-flow: row wrap;
 }
 
-.mission .contact-wrapper {
+.mission .content-wrapper {
   width: 90%;
 }
 
@@ -280,12 +281,13 @@ textarea {
   flex-flow: row wrap;
 }
 
-.contact-section .content-wrapper {
+.contact-section .content-wrapper,
+.contact-section h2 {
   width: 90%;
 }
 
 .contact-section h3, .contact-section p {
-  text-align: center;
+  text-align: left;
 }
 
 .contact-section h3 {
@@ -305,14 +307,167 @@ textarea {
 
 .faq .content-wrapper {
   display: flex;
-  justify-content: left;
+  justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
+
+.faq h2 {
+  text-align: left;
+  width: 90%;
 }
 
 .faq h2, .faq h3 {
   margin: 50px 0 10px;
 }
+
+/* ------------------- Responsive - Tablet Styles ---------------*/
+
+@media only screen and (min-width: 768px) {
+
+/* Base Header - Footer Tablet Styles */
+
+  .content-wrapper {
+    width: 80%;
+  }
+
+  header {
+    margin: 0 10%;
+  }
+
+  header .content-wrapper {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  header .logo {
+    margin-top: 30px;
+    width: 30%;
+  }
+
+  header nav {
+    width: 30%;
+  }
+
+  .header-divider {
+    width: 0;
+  }
+
+  footer .content-wrapper {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  footer .footer-content {
+    width: 90%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 75px;
+  }
+
+  footer .contact,
+  footer .social-media {
+    width: 30%;
+  }
+
+  /* Tablet Styles Homepage */
+
+  .hero-area h2 {
+    margin: 30px 10%;
+  }
+
+  .features h2 {
+    margin: 30px 10%;
+  }
+
+  .features-items {
+    justify-content: space-around;
+  }
+
+  .features article {
+    width: 30%;
+  }
+
+  .reviews h2 {
+    margin: 30px 10%;
+    text-align: left;
+    width: 100%;
+  }
+
+  .reviews .review-content {
+    width: 50%;
+  }
+
+  /* Tablet Styles About Page */
+
+  .mission .content-wrapper,
+  .contact-section .content-wrapper {
+    width: 80%;
+  }
+
+  .mission .mission-content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  .mission p {
+    width: 48%;
+  }
+
+  .mission {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+
+  .contact-section .content-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  .contact-section h2 {
+    width: 80%;
+  }
+
+  .contact-section address {
+    width: 48%;
+    text-align: left;
+  }
+
+  /* Tablet Styles FAQ Page */
+
+  .faq-main {
+    display: flex;
+    justify-content: center;
+  }
+
+  .faq h2 {
+    width: 90%;
+  }
+
+  .faq .content-wrapper {
+    justify-content: space-between;
+    width: 90%;
+  }
+
+  .faq article {
+    width: 47%;
+  }
+
+}
+
+
+/* ------------------- Responsive - Desktop Styles ---------------*/
+
+@media only screen and (min-width: 768px) {
+  
+}
+
 
 /* ==========================================================================
    Helper classes
